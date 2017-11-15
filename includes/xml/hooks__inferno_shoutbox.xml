@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<hooks>
+	<hooktype type="inferno_shoutbox">
+		<hook>inferno_before_shout</hook>
+		<hook>inferno_after_shout</hook>
+		<hook>inferno_after_actioncode</hook>
+		<hook>inferno_before_customcommands</hook>
+		<hook>inferno_after_customcommands</hook>
+		<hook>inferno_load_engine_start</hook>
+		<hook>inferno_load_engine_end</hook>
+		<hook>inferno_update_activity_start</hook>
+		<hook>inferno_update_activity_end</hook>
+		<hook>inferno_update_aop_start</hook>
+		<hook>inferno_update_aop_end</hook>
+		<hook>inferno_fetch_banned_start</hook>
+		<hook>inferno_fetch_banned_end</hook>
+	</hooktype>
+</hooks>
