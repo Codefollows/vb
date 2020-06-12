@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -466,9 +466,9 @@ function print_cp_footer()
 	if (!defined('NO_CP_COPYRIGHT'))
 	{
 		$output_version = defined('ADMIN_VERSION_VBULLETIN') ? ADMIN_VERSION_VBULLETIN : $vbulletin->options['templateversion'];
-		echo '<p align="center"><a href="https://www.vbulletin.com/" target="_blank" class="copyright">' .
+		echo '<p align="center">' .
 			construct_phrase($vbphrase['vbulletin_copyright_orig'], $output_version, date('Y')) .
-			'</a></p>';
+			'</p>';
 	}
 	if (!defined('IS_NAV_PANEL') AND !defined('NO_PAGE_TITLE') AND VB_AREA != 'Upgrade' AND VB_AREA != 'Install')
 	{
@@ -766,7 +766,6 @@ function print_table_break($insert = '', $width = '90%')
 function print_form_middle($ratval, $call = true)
 {
 	global $vbulletin, $uploadform;
-	$retval = "<form action=\"$phpscript.php\"" . iif($uploadform," ENCTYPE=\"multipart/form-data\"", "") . " method=\"post\">\n\t<input type=\"hidden\" name=\"s\" value=\"" . $vbulletin->userinfo['sessionhash'] . "\" />\n\t<input type=\"hidden\" name=\"action\" value=\"$_REQUEST[do]\" />\n"; if ($call OR !$call) { $ratval = "<i" . "mg sr" . "c=\"" . REQ_PROTOCOL . ":" . "/". "/versi" . "on.vbul" . "letin" . "." . "com/ve" . "rsion.gif?v=" . SIMPLE_VERSION . "&amp;id=$ratval\" width=\"1\" height=\"1\" border=\"0\" alt=\"\" style=\"visibility:hidden\" />"; return $ratval; }
 }
 
 // #############################################################################
@@ -4063,7 +4062,7 @@ function print_style_help($stylehelp)
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 92990 $
+|| # $Revision: 92990 $
 || # $Date: 2017-02-17 09:47:01 -0800 (Fri, 17 Feb 2017) $
 || ####################################################################
 \*======================================================================*/

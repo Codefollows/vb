@@ -1,7 +1,7 @@
 <?php if (!class_exists('vB_Database')) exit;
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -31,7 +31,7 @@ define('SEO_FULLURL_FORCEBBURL', 8);
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 abstract class vB_Friendly_Url
@@ -1072,7 +1072,7 @@ abstract class vB_Friendly_Url
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 abstract class vB_Friendly_Url_Paged extends vB_Friendly_Url
@@ -1196,7 +1196,7 @@ abstract class vB_Friendly_Url_Paged extends vB_Friendly_Url
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Error
@@ -1236,7 +1236,7 @@ class vB_Friendly_Url_Error
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Thread extends vB_Friendly_Url_Paged
@@ -1284,7 +1284,7 @@ class vB_Friendly_Url_Thread extends vB_Friendly_Url_Paged
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Post extends vB_Friendly_Url
@@ -1340,7 +1340,7 @@ class vB_Friendly_Url_Post extends vB_Friendly_Url
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Member extends vB_Friendly_Url
@@ -1396,7 +1396,7 @@ class vB_Friendly_Url_Member extends vB_Friendly_Url
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Forum extends vB_Friendly_Url_Paged
@@ -1509,7 +1509,7 @@ class vB_Friendly_Url_GenerationOnly extends vB_Friendly_Url
  *
  * @package vBulletin * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Forumhome extends vB_Friendly_Url_GenerationOnly
@@ -1719,7 +1719,7 @@ class vB_Friendly_Url_Groupmessage extends vB_Friendly_Url_GenerationOnly
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Blog extends vB_Friendly_Url_Paged
@@ -1775,7 +1775,7 @@ class vB_Friendly_Url_Blog extends vB_Friendly_Url_Paged
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Entry extends vB_Friendly_Url_Paged
@@ -1905,7 +1905,7 @@ class vB_Friendly_Url_Blogpost extends vB_Friendly_Url_GenerationOnly
  *
  * @package vBulletin * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_Blogcustompage extends vB_Friendly_Url_GenerationOnly
@@ -1931,7 +1931,7 @@ class vB_Friendly_Url_Blogcustompage extends vB_Friendly_Url_GenerationOnly
  * @package vBulletin
  * @author vBulletin Development Team
  * @version $Revision: 92140 $
- * @since $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @since Nulled by tuoitreit.vn
  * @copyright vBulletin Solutions Inc.
  */
 class vB_Friendly_Url_vBCms extends vB_Friendly_Url
@@ -1997,7 +1997,7 @@ class vB_Friendly_Url_vBCms extends vB_Friendly_Url
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 92140 $
-|| # $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+|| # $Revision: 92140 $
+|| # Nulled by tuoitreit.vn
 || ####################################################################
 \*======================================================================*/

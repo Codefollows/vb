@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
    || #################################################################### ||
-   || # vBulletin 4.2.5 - Nulled by vBWarez.org
+   || # vBulletin 4.2.5
    || # ---------------------------------------------------------------- # ||
    || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
    || # This file may not be redistributed in whole or significant part. # ||
@@ -21,7 +21,7 @@ require_once(DIR . '/includes/blog_functions.php');
  *
  * @package 		vBulletin
  * @version		$Revision: 92140 $
- * @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @date 		Nulled by tuoitreit.vn
  *
  */
 class vB_Attachment_Display_Single_vBCMS_Article extends vB_Attachment_Display_Single
@@ -111,7 +111,7 @@ class vB_Attachment_Display_Single_vBCMS_Article extends vB_Attachment_Display_S
  *
  * @package 		vBulletin
  * @version		$Revision: 92140 $
- * @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @date 		Nulled by tuoitreit.vn
  *
  */
 class vB_Attachment_Display_Multiple_vBCMS_Article extends vB_Attachment_Display_Multiple
@@ -228,7 +228,7 @@ class vB_Attachment_Display_Multiple_vBCMS_Article extends vB_Attachment_Display
  *
  * @package 		vBulletin
  * @version		$Revision: 92140 $
- * @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @date 		Nulled by tuoitreit.vn
  *
  */
 class vB_Attachment_Store_vBCMS_Article extends vB_Attachment_Store
@@ -334,7 +334,7 @@ class vB_Attachment_Store_vBCMS_Article extends vB_Attachment_Store
  *
  * @package 		vBulletin
  * @version		$Revision: 92140 $
- * @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @date 		Nulled by tuoitreit.vn
  *
  */
 class vB_Attachment_Dm_vBCMS_Article extends vB_Attachment_Dm
@@ -452,7 +452,7 @@ class vB_Attachment_Dm_vBCMS_Article extends vB_Attachment_Dm
  *
  * @package 		vBulletin
  * @version		$Revision: 92140 $
- * @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+ * @date 		Nulled by tuoitreit.vn
  *
  */
 class vB_Attachment_Upload_Displaybit_vBCMS_Article extends vB_Attachment_Upload_Displaybit
@@ -480,8 +480,8 @@ class vB_Attachment_Upload_Displaybit_vBCMS_Article extends vB_Attachment_Upload
 }
 /*======================================================================*\
    || ####################################################################
-   || # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 92140 $
-   || # $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+   || # $Revision: 92140 $
+   || # Nulled by tuoitreit.vn
    || ####################################################################
    \*======================================================================*/
 ?>

@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -164,7 +164,6 @@ if ($_POST['do'] == 'notes')
 // ################################# HEADER FRAME ##############################
 // #############################################################################
 
-$versionhost = REQ_PROTOCOL . '://version.vbulletin.com';
 
 if ($_REQUEST['do'] == 'head')
 {
@@ -178,8 +177,7 @@ if ($_REQUEST['do'] == 'head')
 	?>
 	<table border="0" width="100%" height="100%">
 	<tr align="center" valign="top">
-		<td style="text-align:<?php echo vB_Template_Runtime::fetchStyleVar('left'); ?>"><a href="https://www.vbulletin.com/" target="_blank"><b><?php echo $vbphrase['admin_control_panel']; ?></b> (vBulletin <?php echo ADMIN_VERSION_VBULLETIN . print_form_middle('VBCFE750BA'); ?>)<?php echo iif(is_demo_mode(), ' <b>DEMO MODE</b>'); ?></a></td>
-		<td><a href="https://members.vbulletin.com/" id="head_version_link" target="_blank">&nbsp;</a></td>
+		<td style="text-align:<?php echo vB_Template_Runtime::fetchStyleVar('left'); ?>"><b><?php echo $vbphrase['admin_control_panel']; ?></b> (vBulletin <?php echo ADMIN_VERSION_VBULLETIN; ?>)<?php echo iif(is_demo_mode(), ' <b>DEMO MODE</b>'); ?></td>
 		<td style="white-space:nowrap; text-align:<?php echo vB_Template_Runtime::fetchStyleVar('right'); ?>; font-weight:bold">
 			<a href="<?php echo $forumhomelink; ?>" target="_blank"><?php echo $vbphrase['forum_home_page']; ?></a>
 			|
@@ -187,12 +185,6 @@ if ($_REQUEST['do'] == 'head')
 		</td>
 	</tr>
 	</table>
-	<script type="text/javascript" src="<?php echo $versionhost; ?>/version.js?v=<?php echo SIMPLE_VERSION; ?>&amp;id=VBCFE750BA&amp;pid=vbulletinsuite"></script>
-	<script type="text/javascript">
-	<!--
-	fetch_object('head_version_link').innerHTML = construct_phrase('<?php echo $vbphrase['latest_version_available_x']; ?>', ((typeof(vb_version) == 'undefined' || vb_version == '') ? '<?php echo $vbphrase['n_a']; ?>' : vb_version));
-	//-->
-	</script>
 	<?php
 
 	define('NO_CP_COPYRIGHT', true);
@@ -328,7 +320,7 @@ if ($_REQUEST['do'] == 'nav')
 	print_cp_header();
 
 	echo "\n<div>";
-	?><img src="../cpstyles/<?php echo $vbulletin->options['cpstylefolder']; ?>/cp_logo.gif" title="<?php echo $vbphrase['admin_control_panel']; ?>" alt="" border="0" hspace="4" <?php $df = print_form_middle("VBCFE750BA"); ?> vspace="4" /><?php
+	?><img src="../cpstyles/<?php echo $vbulletin->options['cpstylefolder']; ?>/cp_logo.gif" title="<?php echo $vbphrase['admin_control_panel']; ?>" alt="" border="0" hspace="4" vspace="4" /><?php
 	echo "</div>\n\n" . iif(is_demo_mode(), "<div align=\"center\"><b>DEMO MODE</b></div>\n\n") . "<div style=\"width:168px; padding: 4px\">\n";
 
 	// cache nav prefs
@@ -1006,12 +998,6 @@ print_label_row($vbphrase['useful_links'], '
 	<form style="display:inline">
 	<select onchange="if (this.options[this.selectedIndex].value != \'\') { window.open(this.options[this.selectedIndex].value); } return false;" tabindex="1" class="bginput">
 		<option value="">-- ' . $vbphrase['useful_links'] . ' --</option>' . construct_select_options(array(
-			'vBulletin' => array(
-				'https://www.vbulletin.com/' => $vbphrase['home_page'] . ' (vBulletin.com)',
-				'https://members.vbulletin.com/' => $vbphrase['members_area'],
-				'https://www.vbulletin.com/forum/' => $vbphrase['community_forums'],
-				'https://www.vbulletin.com/docs/html/' => $vbphrase['reference_manual']
-			),
 			'PHP' => array(
 				'https://www.ph' . 'p.net/' => $vbphrase['home_page'] . ' (PHP.net)',
 				'https://www.ph' . 'p.net/manual/' => $vbphrase['reference_manual'],
@@ -1043,53 +1029,12 @@ require_once(DIR . '/includes/vbulletin_credits.php');
 
 <p class="smallfont" align="center">
 <!--<?php echo construct_phrase($vbphrase['vbulletin_copyright'], $vbulletin->options['templateversion'], date('Y')); ?><br />-->
-<script type="text/javascript">
-<!--
-if (typeof(vb_version) != "undefined")
-{
-	var this_vb_version = "<?php echo ADMIN_VERSION_VBULLETIN; ?>";
-	if (isNewerVersion(this_vb_version, vb_version))
-	{
-		document.writeln('<a href="https://www.vbulletin.com/forum/node/' + vb_announcementid + '" target="_blank">' + construct_phrase(latest_string, vb_version) + '</a><br />' + construct_phrase(current_string, this_vb_version.bold()));
-	}
-	else
-	{
-		document.write(construct_phrase('<?php echo $vbphrase['your_version_of_vbulletin_is_up_to_date']; ?>', this_vb_version));
-	}
-}
-// -->
-</script>
 </p>
 
 <?php
 
 unset($DEVDEBUG);
 
-?>
-<script type="text/javascript">
-<!--
-var current_version = "<?php echo ADMIN_VERSION_VBULLETIN; ?>";
-var latest_string = "<?php echo $vbphrase['latest_version_available_x']; ?>";
-var current_string = "<?php echo $vbphrase['you_are_running_vbulletin_version_x']; ?>";
-var download_string = "<?php echo $vbphrase['download_vbulletin_x_from_members_area']; ?>";
-var newer_version_string = "<?php echo $vbphrase['there_is_a_newer_vbulletin_version']; ?>";
-var dismissed_news = "<?php echo ($vbulletin->GPC['showallnews'] ? '' : $vbulletin->userinfo['dismissednews']); ?>";
-var dismiss_string = "<?php echo $vbphrase['dismiss']; ?>";
-var vbulletin_news_string = "<?php echo $vbphrase['vbulletin_news_x']; ?>";
-var news_header_string = "<?php echo $vbphrase['news_header_string']; ?>";
-var show_all_news_link = "index.php?<?php echo $vbulletin->session->vars['sessionurl_js']; ?>do=home&showallnews=1";
-var show_all_news_string = "<?php echo $vbphrase['show_all_news']; ?>";
-var view_string = "<?php echo $vbphrase['view']; ?>...";
-var stylevar_left = "<?php echo vB_Template_Runtime::fetchStyleVar('left'); ?>";
-var stylevar_right = "<?php echo vB_Template_Runtime::fetchStyleVar('right'); ?>";
-var done_table = <?php echo (empty($news_rows) ? 'false' : 'true'); ?>;
-var local_extension = '.php';
-//-->
-</script>
-<script type="text/javascript" src="<?php echo $versionhost; ?>/versioncheck.js?v=<?php echo SIMPLE_VERSION; ?>"></script>
-<script type="text/javascript" src="<?php echo $versionhost; ?>/version.js?v=<?php echo SIMPLE_VERSION; ?>&amp;id=VBCFE750BA&amp;pid=vbulletinsuite"></script>
-<script type="text/javascript" src="../clientscript/vbulletin_cphome_scripts.js?v=<?php echo SIMPLE_VERSION; ?>"></script>
-<?php
 
 print_cp_footer();
 
@@ -1115,8 +1060,7 @@ if ($_POST['do'] == 'handlemessage')
 {
 	$vbulletin->input->clean_array_gpc('p', array(
 		'address' => TYPE_ARRAY_KEYS_INT,
-		'dismiss' => TYPE_ARRAY_KEYS_INT,
-		'acpnews' => TYPE_ARRAY_KEYS_INT
+		'dismiss' => TYPE_ARRAY_KEYS_INT
 	));
 
 	print_cp_header($vbphrase['welcome_to_the_vbulletin_admin_control_panel']);
@@ -1213,35 +1157,12 @@ if ($_POST['do'] == 'handlemessage')
 			WHERE adminmessageid = $adminmessageid
 		");
 	}
-	else if ($vbulletin->GPC['acpnews'])
-	{
-		$items = preg_split('#\s*,\s*#s', $vbulletin->userinfo['dismissednews'], -1, PREG_SPLIT_NO_EMPTY);
-		$items[] = intval($vbulletin->GPC['acpnews'][0]);
-		$vbulletin->userinfo['dismissednews'] = implode(',', array_unique($items));
-
-		$admindata = datamanager_init('Admin', $vbulletin, ERRTYPE_CP);
-		if ($getperms = $vbulletin->db->query_first("
-			SELECT userid
-			FROM " . TABLE_PREFIX . "administrator
-			WHERE userid = " . $vbulletin->userinfo['userid']
-		))
-		{
-			$admindata->set_existing($vbulletin->userinfo);
-		}
-		else
-		{
-			$admindata->set('userid', $vbulletin->userinfo['userid']);
-		}
-
-		$admindata->set('dismissednews', $vbulletin->userinfo['dismissednews']);
-		$admindata->save();
-	}
 	print_cp_redirect('index.php?do=home' . $vbulletin->session->vars['sessionurl_js']);
 }
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 92648 $
+|| # $Revision: 92648 $
 || # $Date: 2017-01-26 16:41:56 -0800 (Thu, 26 Jan 2017) $
 || ####################################################################
 \*======================================================================*/

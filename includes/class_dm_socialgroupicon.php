@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -23,7 +23,7 @@ if (!class_exists('vB_DataManager', false))
 *
 * @package	vBulletin
 * @version	$Revision: 92140 $
-* @date		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date		Nulled by tuoitreit.vn
 */
 class vB_DataManager_SocialGroupIcon extends vB_DataManager
 {
@@ -292,7 +292,7 @@ class vB_DataManager_SocialGroupIcon extends vB_DataManager
 *
 * @package	vBulletin
 * @version	$Revision: 92140 $
-* @date		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date		Nulled by tuoitreit.vn
 */
 class vB_DataManager_SocialGroupIcon_Filesystem extends vB_DataManager_SocialGroupIcon
 {
@@ -501,8 +501,8 @@ class vB_DataManager_SocialGroupIcon_Filesystem extends vB_DataManager_SocialGro
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 92140 $
-|| # $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+|| # $Revision: 92140 $
+|| # Nulled by tuoitreit.vn
 || ####################################################################
 \*======================================================================*/
 ?>

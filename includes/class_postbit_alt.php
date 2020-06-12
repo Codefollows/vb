@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -20,7 +20,7 @@ if (!isset($GLOBALS['vbulletin']->db))
 *
 * @package 		vBulletin
 * @version		$Revision: 92140 $
-* @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date 		Nulled by tuoitreit.vn
 *
 */
 class vB_Postbit_Announcement extends vB_Postbit
@@ -141,7 +141,7 @@ class vB_Postbit_Announcement extends vB_Postbit
 *
 * @package 		vBulletin
 * @version		$Revision: 92140 $
-* @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date 		Nulled by tuoitreit.vn
 *
 */
 class vB_Postbit_Pm extends vB_Postbit
@@ -245,7 +245,7 @@ class vB_Postbit_Pm extends vB_Postbit
 *
 * @package 		vBulletin
 * @version		$Revision: 92140 $
-* @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date 		Nulled by tuoitreit.vn
 *
 */
 class vB_Postbit_Post_Deleted extends vB_Postbit_Post
@@ -284,7 +284,7 @@ class vB_Postbit_Post_Deleted extends vB_Postbit_Post
 *
 * @package 		vBulletin
 * @version		$Revision: 92140 $
-* @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date 		Nulled by tuoitreit.vn
 *
 */
 class vB_Postbit_Post_Global_Ignore extends vB_Postbit_Post
@@ -324,7 +324,7 @@ class vB_Postbit_Post_Global_Ignore extends vB_Postbit_Post
 *
 * @package 		vBulletin
 * @version		$Revision: 92140 $
-* @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date 		Nulled by tuoitreit.vn
 *
 */
 class vB_Postbit_Post_Ignore extends vB_Postbit_Post
@@ -371,7 +371,7 @@ class vB_Postbit_Post_Ignore extends vB_Postbit_Post
 *
 * @package 		vBulletin
 * @version		$Revision: 92140 $
-* @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date 		Nulled by tuoitreit.vn
 *
 */
 class vB_Postbit_Usernote extends vB_Postbit
@@ -413,7 +413,7 @@ class vB_Postbit_Usernote extends vB_Postbit
 *
 * @package 		vBulletin
 * @version		$Revision: 92140 $
-* @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date 		Nulled by tuoitreit.vn
 *
 */
 class vB_Postbit_External extends vB_Postbit
@@ -519,7 +519,7 @@ class vB_Postbit_External extends vB_Postbit
 *
 * @package 		vBulletin
 * @version		$Revision: 92140 $
-* @date 		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date 		Nulled by tuoitreit.vn
 *
 */
 class vB_Postbit_Post_AutoModerated extends vB_Postbit_Post
@@ -557,8 +557,8 @@ class vB_Postbit_Post_AutoModerated extends vB_Postbit_Post
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 92140 $
-|| # $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+|| # $Revision: 92140 $
+|| # Nulled by tuoitreit.vn
 || ####################################################################
 \*======================================================================*/
 ?>

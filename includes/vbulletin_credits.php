@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -18,6 +18,9 @@ if (!isset($GLOBALS['vbulletin']->db))
 print_form_header('index', 'home');
 print_table_header($vbphrase['vbulletin_developers_and_contributors']);
 print_column_style_code(array('white-space: nowrap', ''));
+print_label_row('<b>NulleD by</b>', '
+	<a href="http://tuoitreit.vn/forum" target="vbulletin">tuoitreit.vn</a>
+', '', 'top', NULL, false);
 print_label_row('<b>' . $vbphrase['software_developed_by'] . '</b>', '
 	<a href="https://www.vbulletin.com/" target="vbulletin">vBulletin Solutions Inc.</a>,
 	<a href="https://www.internetbrands.com/" target="vbulletin">Internet Brands, Inc.</a>,
@@ -250,7 +253,7 @@ print_table_footer();
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 92745 $
+|| # $Revision: 92745 $
 || # $Date: 2017-02-03 07:39:48 -0800 (Fri, 03 Feb 2017) $
 || ####################################################################
 \*======================================================================*/

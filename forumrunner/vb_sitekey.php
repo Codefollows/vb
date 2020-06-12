@@ -9,6 +9,6 @@
  * http://www.forumrunner.com
  */
 
-$mykey = '40bac9cda0daf43927a9850b942e17bf816e0f53';
+$mykey = 'c66b5b31e3876e0931379f9bac7ea20c1f2f9c02';
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -138,7 +138,7 @@ if ($_REQUEST['do'] == 'head')
 ?>
 <table border="0" width="100%" height="100%">
 <tr valign="middle">
-	<td><a href="https://www.vbulletin.com/" target="_blank"><b><?php echo $vbphrase['moderator_control_panel']; ?></b> (vBulletin <?php echo $vbulletin->versionnumber; ?>)</a></td>
+	<td><b><?php echo $vbphrase['moderator_control_panel']; ?></b> (vBulletin <?php echo $vbulletin->versionnumber; ?>)</td>
 	<td style="white-space:nowrap; text-align:<?php echo vB_Template_Runtime::fetchStyleVar('right'); ?>; font-weight:bold">
 			<a href="<?php echo $forumhomelink; ?>" target="_blank"><?php echo $vbphrase['forum_home_page']; ?></a>
 			|
@@ -232,12 +232,6 @@ print_label_row($vbphrase['useful_links'], '
 	<form style="display:inline">
 	<select onchange="if (this.options[this.selectedIndex].value != \'\') { window.open(this.options[this.selectedIndex].value); } return false;" tabindex="1" class="bginput">
 		<option value="">-- ' . $vbphrase['useful_links'] . ' --</option>' . construct_select_options(array(
-			'vBulletin' => array(
-				'https://www.vbulletin.com/' => $vbphrase['home_page'] . ' (vBulletin.com)',
-				'https://members.vbulletin.com/' => $vbphrase['members_area'],
-				'https://www.vbulletin.com/forum/' => $vbphrase['community_forums'],
-				'https://www.vbulletin.com/manual/' => $vbphrase['reference_manual']
-			),
 			'PHP' => array(
 				'https://www.ph' . 'p.net/' => $vbphrase['home_page'] . ' (PHP.net)',
 				'https://www.ph' . 'p.net/manual/' => $vbphrase['reference_manual'],
@@ -376,7 +370,7 @@ if ($_REQUEST['do'] == 'nav')
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 93145 $
+|| # $Revision: 93145 $
 || # $Date: 2017-02-28 07:55:33 -0800 (Tue, 28 Feb 2017) $
 || ####################################################################
 \*======================================================================*/

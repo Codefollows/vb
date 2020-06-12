@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin Blog 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin Blog 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -21,7 +21,7 @@ require_once(DIR . '/includes/class_dm_deletionlog.php');
 *
 * @package	vBulletin
 * @version	$Revision: 92140 $
-* @date		$Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+* @date		Nulled by tuoitreit.vn
 */
 class vB_DataManager_DeletionLog_Blog extends vB_DataManager_DeletionLog
 {
@@ -104,8 +104,8 @@ class vB_DataManager_DeletionLog_Blog extends vB_DataManager_DeletionLog
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 92140 $
-|| # $Date: 2016-12-30 20:26:15 -0800 (Fri, 30 Dec 2016) $
+|| # $Revision: 92140 $
+|| # Nulled by tuoitreit.vn
 || ####################################################################
 \*======================================================================*/
 ?>

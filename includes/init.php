@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -75,8 +75,8 @@ $vbulletin = new vB_Registry();
 $vbulletin->fetch_ip_data();
 
 // Add AdSense if present
-$vbulletin->adsense_pub_id = 'ca-pub-5197875837639125';
-$vbulletin->adsense_host_id = 'ca-host-pub-2606800903002383';
+$vbulletin->adsense_pub_id = '';
+$vbulletin->adsense_host_id = '';
 
 if (CWD == '.')
 {
@@ -885,7 +885,7 @@ bootstrap_framework(); // load the vB Framework.
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 93328 $
+|| # $Revision: 93328 $
 || # $Date: 2017-03-10 15:26:29 -0800 (Fri, 10 Mar 2017) $
 || ####################################################################
 \*======================================================================*/

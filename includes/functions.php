@@ -1,7 +1,7 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5 - Nulled by vBWarez.org
+|| # vBulletin 4.2.5
 || # ---------------------------------------------------------------- # ||
 || # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
@@ -31,7 +31,7 @@ define('REQ_INCR', 3);
 /**
 * @ignore
 */
-define('COOKIE_SALT', 'pkC7Fi7jOJ1bUqJ4Xv2JDUIyu');
+define('COOKIE_SALT', 'rYbYSzcIO74AtEaQxgIT0eMhTihNdM3uC4');
 define('EDITOR_INDENT', 40);
 
 /* Navbar stuff, Dont use 
@@ -8386,7 +8386,7 @@ function vb_ip2long($ipaddress, $convert = false)
 
 /*======================================================================*\
 || ####################################################################
-|| # Downloaded: 19:19, Wed May 10th 2017 : $Revision: 93880 $
+|| # $Revision: 93880 $
 || # $Date: 2017-05-01 05:53:57 -0700 (Mon, 01 May 2017) $
 || ####################################################################
 \*======================================================================*/
