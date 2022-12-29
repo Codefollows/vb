@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -325,7 +325,7 @@ if (in_array($_REQUEST['do'], array('displayweek', 'displaymonth', 'displayyear'
 }
 else
 {
-	$navbits['calendar.php?' . $vbulletin->session->vars['sessionurl'] . "c={$calendarinfo[calendarid]}"] = $calendarinfo['title'];
+	$navbits['calendar.php?' . $vbulletin->session->vars['sessionurl'] . "c={$calendarinfo['calendarid']}"] = $calendarinfo['title'];
 }
 
 $today = getdate(TIMENOW - $vbulletin->options['hourdiff']);
@@ -2776,7 +2776,7 @@ eval(standard_error(fetch_error('invalidid', $idname, $vbulletin->options['conta
 /*======================================================================*\
 || ####################################################################
 || # $Revision: 92140 $
-|| # Nulled by tuoitreit.vn
+|| # NulleD By - vBSupport.org
 || ####################################################################
 \*======================================================================*/
 ?>

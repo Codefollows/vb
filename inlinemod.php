@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -2756,7 +2756,7 @@ if ($_POST['do'] == 'domergethreads')
 					$counter['deleted'][] = $thread['threadid'];
 					break;
 				default: // Invalid State
-					continue;
+					continue 2; // eska added "2"
 			}
 		}
 
@@ -3461,7 +3461,7 @@ if ($_POST['do'] == 'dodeleteposts')
 			eval(standard_error(fetch_error('you_do_not_have_permission_to_delete_threads_and_posts', $post['title'], $post['threadtitle'], $vbulletin->forumcache["$post[forumid]"]['title'])));
 		}
 		else if (
-			!physicaldel
+			!'physicaldel'
 			AND (
 				!can_moderate($post['forumid'], 'candeleteposts')
 				AND (
@@ -4080,7 +4080,7 @@ if ($_POST['do'] == 'domergeposts')
 		$errors = $postman->errors;
 	}
 
-	if (sizeof($errors) > 0)
+	if (isset($errors) AND sizeof($errors) > 0) // eska fix
 	{
 		unset($postman);
 		// ### POST HAS ERRORS ###

@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -258,7 +258,7 @@ if ($_POST['do'] == 'postreply')
 {
 	// Variables reused in templates
 	$posthash = $vbulletin->input->clean_gpc('p', 'posthash', TYPE_NOHTML);
-	$poststarttime = $vbulletin->input->clean_gpc('p', poststarttime, TYPE_UINT);
+	$poststarttime = $vbulletin->input->clean_gpc('p', 'poststarttime', TYPE_UINT);
 
 	$vbulletin->input->clean_array_gpc('p', array(
 		'wysiwyg'        => TYPE_BOOL,
@@ -1084,7 +1084,7 @@ if ($_REQUEST['do'] == 'newreply')
 	$folders = vb_unserialize($vbulletin->userinfo['subfolders']);
 
 	// Don't show the folderjump if we only have one folder, would be redundant ;)
-	if (sizeof($folders) > 1)
+	if (array($folders) > 1)
 	{
 		require_once(DIR . '/includes/functions_misc.php');
 		$folderbits = construct_folder_jump(1, $folderid, false, $folders);

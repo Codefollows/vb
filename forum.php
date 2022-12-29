@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -67,7 +67,7 @@ $actiontemplates = array();
 require_once('./global.php');
 
 // Redirect if required
-if (VB_REDIRECT === true)
+if ('VB_REDIRECT' === true)
 {
 	$tabid = get_navigation_default(build_navigation_list(), false);
 

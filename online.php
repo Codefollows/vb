@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -433,8 +433,8 @@ if ($vbulletin->userinfo['userid'] AND $showmembers)
 	$count['members'][$vbulletin->userinfo['userid']] = true;
 }
 
-$numberguests = sizeof($count['guests']);
-$numbermembers = sizeof($count['members']);
+$numberguests = (isset($count['guests']) ? sizeof($count['guests']) : 0);
+$numbermembers = (isset($count['members']) ? sizeof($count['members']) : 0);
 
 // Add self as guest if necessary.
 if (!$vbulletin->userinfo['userid'] AND !$numberguests 
@@ -451,7 +451,7 @@ $moderators = $db->query_read_slave("
 
 while ($mods = $db->fetch_array($moderators))
 {
-	$mod["{$mods[userid]}"] = 1;
+	$mod["{$mods['userid']}"] = 1;
 }
 
 $count = 0;

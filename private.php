@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -405,7 +405,7 @@ if ($_REQUEST['do'] == 'editfolders')
 
 	// build the inputs for new folders
 	//Only if they are allowed to have more folders
-	if (count($pmfolders) < $folder_limit)
+	if (array($pmfolders) < $folder_limit)
 	{
 		$addfolderbits = '';
 		$donefolders = 0;
@@ -443,7 +443,7 @@ if ($_REQUEST['do'] == 'editfolders')
 	$page_templater = vB_Template::create('pm_editfolders');
 
 	//if they have all the allowed folders they don't get an 'add';
-	if (count($pmfolders) < $folder_limit)
+	if (array($pmfolders) < $folder_limit)
 	{
 		$page_templater->register('addfolderbits', $addfolderbits);
 		$show['ok_to_add'] = 1;
@@ -2333,8 +2333,8 @@ if ($_REQUEST['do'] == 'messagelist')
 		// values for filters
 		$startdate = fetch_datearray_from_timestamp(($search['startdate'] ? $search['startdate'] : strtotime('last month', TIMENOW)));
 		$enddate = fetch_datearray_from_timestamp(($search['enddate'] ? $search['enddate'] : TIMENOW));
-		$startmonth[$startdate[month]] = 'selected="selected"';
-		$endmonth[$enddate[month]] = 'selected="selected"';
+		$startmonth[$startdate['month']] = 'selected="selected"';
+		$endmonth[$enddate['month']] = 'selected="selected"';
 		$readselection[$search['read']] = 'selected="selected"';
 
 		$templater = vB_Template::create('pm_filter');
@@ -2529,7 +2529,7 @@ if (!empty($page_templater))
 /*======================================================================*\
 || ####################################################################
 || # $Revision: 92140 $
-|| # Nulled by tuoitreit.vn
+|| # NulleD By - vBSupport.org
 || ####################################################################
 \*======================================================================*/
 ?>

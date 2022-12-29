@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -392,7 +392,7 @@ if ($_POST['do'] == 'updatepost')
 		$edit['podcastsize'] = $dataman->info['podcastsize'];
 	}
 
-	if (sizeof($errors) > 0)
+	if (is_array($errors) > 0)
 	{
 		// ### POST HAS ERRORS ###
 		if ($vbulletin->GPC['ajax'])
@@ -975,7 +975,7 @@ if ($_REQUEST['do'] == 'editpost')
 	}
 
 	// Don't show the folderjump if we only have one folder, would be redundant ;)
-	if (sizeof($folders) > 1)
+	if (is_array($folders) > 1)
 	{
 		require_once(DIR . '/includes/functions_misc.php');
 		$folderbits = construct_folder_jump(1, $threadinfo['folderid'], false, $folders);
@@ -1384,7 +1384,7 @@ if ($_POST['do'] == 'deletepost')
 /*======================================================================*\
 || ####################################################################
 || # $Revision: 92140 $
-|| # Nulled by tuoitreit.vn
+|| # NulleD By - vBSupport.org
 || ####################################################################
 \*======================================================================*/
 ?>

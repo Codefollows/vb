@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -725,7 +725,7 @@ if ($_POST['do'] == 'updatepictures')
 	// update all albums that pictures were moved to
 	foreach ($destinations as $albumid => $album)
 	{
-		if (sizeof($album['moved_pictures']))
+		if (is_array($album['moved_pictures']))
 		{
 			$albumdata = datamanager_init('Album', $vbulletin, ERRTYPE_SILENT);
 			$albumdata->set_existing($album);
@@ -1778,7 +1778,7 @@ if ($_REQUEST['do'] == 'album')
 	$show['add_picture_option'] = (
 		$userinfo['userid'] == $vbulletin->userinfo['userid']
 			AND
-		fetch_count_overage($userinfo['userid'], $albuminfo[albumid], $vbulletin->userinfo['permissions']['albummaxpics']) <= 0
+		fetch_count_overage($userinfo['userid'], $albuminfo['albumid'], $vbulletin->userinfo['permissions']['albummaxpics']) <= 0
 			AND
 		(
 			!$vbulletin->options['album_maxpicsperalbum']
@@ -2314,7 +2314,7 @@ if ($_REQUEST['do'] == 'unread')
 /*======================================================================*\
 || ####################################################################
 || # $Revision: 92140 $
-|| # Nulled by tuoitreit.vn
+|| # NulleD By - vBSupport.org
 || ####################################################################
 \*======================================================================*/
 ?>

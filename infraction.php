@@ -1,9 +1,9 @@
 <?php
 /*======================================================================*\
 || #################################################################### ||
-|| # vBulletin 4.2.5
+|| # vBulletin 4.2.6 by vBS
 || # ---------------------------------------------------------------- # ||
-|| # Copyright ©2000-2017 vBulletin Solutions Inc. All Rights Reserved. ||
+|| # Copyright ©2000-2018 vBulletin Solutions Inc. All Rights Reserved. ||
 || # This file may not be redistributed in whole or significant part. # ||
 || # ---------------- VBULLETIN IS NOT FREE SOFTWARE ---------------- # ||
 || #        www.vbulletin.com | www.vbulletin.com/license.html        # ||
@@ -558,7 +558,7 @@ if ($_POST['do'] == 'update')
 
 	$errors = array();
 	$infdata = datamanager_init('Infraction', $vbulletin, ERRTYPE_STANDARD);
-	$infdata->setr_info('warning', $vbulletin->GPC['warning']["{$vbulletin->GPC[infractionlevelid]}"]);
+	$infdata->setr_info('warning', $vbulletin->GPC['warning']["{$vbulletin->GPC['infractionlevelid']}"]);
 	$infdata->setr_info('postinfo', $postinfo);
 	$infdata->setr_info('userinfo', $userinfo);
 	$infdata->setr_info('threadinfo', $threadinfo);
@@ -631,7 +631,7 @@ if ($_POST['do'] == 'update')
 			}
 		}
 
-		if (!$vbulletin->GPC['warning']["{$vbulletin->GPC[infractionlevelid]}"] AND empty($vbulletin->GPC['banreason']) AND ($infractionban OR ($minimumpointsban AND $infractionlevel['points'] + $userinfo['ipoints'] >= $minimumpointsban)))
+		if (!$vbulletin->GPC['warning']["{$vbulletin->GPC['infractionlevelid']}"] AND empty($vbulletin->GPC['banreason']) AND ($infractionban OR ($minimumpointsban AND $infractionlevel['points'] + $userinfo['ipoints'] >= $minimumpointsban)))
 		{
 			$errors[] = 'invalid_banreason';
 		}
@@ -1272,7 +1272,7 @@ if ($_REQUEST['do'] == 'report')
 /*======================================================================*\
 || ####################################################################
 || # $Revision: 92140 $
-|| # Nulled by tuoitreit.vn
+|| # NulleD By - vBSupport.org
 || ####################################################################
 \*======================================================================*/
 ?>
